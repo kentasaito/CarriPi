@@ -35,8 +35,8 @@ export class Server {
     this.requestParameters = this.requestPath.split("/");
     this.requestController = this.requestParameters.shift();
 
-console.log(Deno.cwd());
-console.log(Deno.readFileSync(`./controllers/${this.requestController}.js`));
+console.log(`${Deno.cwd()}/controllers/${this.requestController}.js`);
+console.log(Deno.readFileSync(`${Deno.cwd()}/controllers/${this.requestController}.js`));
 
     let module;
     try {
