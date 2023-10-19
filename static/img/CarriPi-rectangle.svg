@@ -1,0 +1,31 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="-5 0 21 16"
+  width="210"
+  height="160"
+  fill="none"
+  stroke="hsl(0, 0%, 20%)"
+  stroke-width="0"
+  stroke-linejoin="round"
+  stroke-linecap="round">
+
+  <!-- Pigeon body -->
+  <path
+    fill="hsl(216, 50%, 60%)"
+     d="m 4,8 c 0,0 -6,1 -8,-4 0,0 6,-1 7,0 1,1 2,0 2,0 2,-4 4,-2 4,-2 l 2,2 c 0,0 -2,0 -3,4 -1,4 -5,3 -5,3 l -3,3 c -4,-1 -3,-5 -3,-5 l 4,-1"
+  />
+  <!-- Pigeon eye -->
+  <path
+    stroke-width="1"
+    d="m 8,4 l 0,0"
+  />
+
+  <!-- Envelope body -->
+  <path
+    fill="hsl(72, 50%, 60%)"
+    d="m 5,11 6,-6 4,4 -6,6 z" />
+  <!-- Envelope flap -->
+  <path
+    fill="hsl(72, 50%, 80%)"
+    d="m 5,11 5,-1 1,-5 z" />
+</svg>

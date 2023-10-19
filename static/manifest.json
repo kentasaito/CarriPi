@@ -1,0 +1,13 @@
+{
+  "name": "CarriPi",
+  "display": "standalone",
+  "start_url": "index.html",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/static/img/CarriPi-mini.png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "/"
+}
