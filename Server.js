@@ -35,13 +35,8 @@ export class Server {
     this.requestParameters = this.requestPath.split("/");
     this.requestController = this.requestParameters.shift();
 
-console.log('Can I use console.log?');
+console.log(Deno.cwd());
 console.log(Deno.readFileSync(`./controllers/${this.requestController}.js`));
-return new Response(JSON.stringify(Deno.cwd()), {
-  headers: {
-    "Content-Type": "text/html",
-  },
-});
 
     let module;
     try {
