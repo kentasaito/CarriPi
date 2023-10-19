@@ -35,6 +35,12 @@ export class Server {
     this.requestParameters = this.requestPath.split("/");
     this.requestController = this.requestParameters.shift();
 
+return new Response(JSON.stringify(Deno.cwd()), {
+  headers: {
+    "Content-Type": "text/html",
+  },
+});
+
     let module;
     try {
       module = await import(`./controllers/${this.requestController}.js`);
