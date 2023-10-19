@@ -37,6 +37,7 @@ export class Server {
 
 console.log(`${Deno.cwd()}/controllers/${this.requestController}.js`);
 console.log(Deno.readFileSync(`${Deno.cwd()}/controllers/${this.requestController}.js`));
+await import(`./controllers/${this.requestController}.js`);
 
     let module;
     try {
