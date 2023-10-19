@@ -40,11 +40,11 @@ console.log(Deno.readFileSync(`${Deno.cwd()}/controllers/${this.requestControlle
 const testModule = await import(`${Deno.cwd()}/controllers/test.js`);
 testModule.hoge();
 
-await import(`./controllers/${this.requestController}.js`);
+await import(`${Deno.cwd()}/controllers/${this.requestController}.js`);
 
     let module;
     try {
-      module = await import(`./controllers/${this.requestController}.js`);
+      module = await import(`${Deno.cwd()}/controllers/${this.requestController}.js`);
     } catch (error) {
       return new Response(error, { status: 404 });
     }
