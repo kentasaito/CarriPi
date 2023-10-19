@@ -37,7 +37,7 @@ export class Server {
 
 console.log(`${Deno.cwd()}/controllers/${this.requestController}.js`);
 console.log(Deno.readFileSync(`${Deno.cwd()}/controllers/${this.requestController}.js`));
-const testModule = await import(`./controllers/test.js`);
+const testModule = await import(`${Deno.cwd()}/controllers/test.js`);
 testModule.hoge();
 
 await import(`./controllers/${this.requestController}.js`);
