@@ -1,4 +1,7 @@
-import { Server } from "./Server.js";
+const module = await import(`./Server.js`);
+const Server = module.Server;
+
+//import { Server } from "./Server.js";
 //import { Site } from "./models/Site.js";
 
 //await Site.start("./misc/kv.sqlite3");

@@ -35,13 +35,6 @@ export class Server {
     this.requestParameters = this.requestPath.split("/");
     this.requestController = this.requestParameters.shift();
 
-console.log(`${Deno.cwd()}/controllers/${this.requestController}.js`);
-console.log(Deno.readFileSync(`${Deno.cwd()}/controllers/${this.requestController}.js`));
-const testModule = await import(`${Deno.cwd()}/controllers/test.js`);
-testModule.hoge();
-
-await import(`${Deno.cwd()}/controllers/${this.requestController}.js`);
-
     let module;
     try {
       module = await import(`${Deno.cwd()}/controllers/${this.requestController}.js`);
